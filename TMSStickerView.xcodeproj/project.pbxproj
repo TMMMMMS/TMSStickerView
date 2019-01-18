@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E7ED40F21ED87A30048BC6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED40E21ED87A30048BC6B /* AppDelegate.m */; };
+		6E7ED41221ED87A30048BC6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED41121ED87A30048BC6B /* ViewController.m */; };
+		6E7ED41521ED87A40048BC6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ED41321ED87A40048BC6B /* Main.storyboard */; };
+		6E7ED41721ED87A70048BC6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ED41621ED87A70048BC6B /* Assets.xcassets */; };
+		6E7ED41A21ED87A70048BC6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ED41821ED87A70048BC6B /* LaunchScreen.storyboard */; };
+		6E7ED41D21ED87A70048BC6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED41C21ED87A70048BC6B /* main.m */; };
+		6E7ED42521ED91D90048BC6B /* emoji_ios9+.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E7ED42421ED91D90048BC6B /* emoji_ios9+.json */; };
+		6E7ED42821ED91E80048BC6B /* TMSEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED42721ED91E80048BC6B /* TMSEmoji.m */; };
+		6E7ED42B21EDA83F0048BC6B /* TMSEmojiViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED42A21EDA83F0048BC6B /* TMSEmojiViewConst.m */; };
+		6E7ED42E21EDA8A50048BC6B /* TMSStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED42D21EDA8A50048BC6B /* TMSStickerView.m */; };
+		6E7ED43121EDAC890048BC6B /* TMSStickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED43021EDAC890048BC6B /* TMSStickerCollectionViewCell.m */; };
+		6E7ED43421EDB33E0048BC6B /* TMSEmojiPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED43321EDB33E0048BC6B /* TMSEmojiPreviewView.m */; };
+		6E7ED43721EDB3D20048BC6B /* TMSCustomStickerPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E7ED43621EDB3D20048BC6B /* TMSCustomStickerPreviewView.m */; };
+		6EF4844D21F02CD900A5C6CA /* TMSInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4844C21F02CD900A5C6CA /* TMSInputView.m */; };
+		6EF4845021F06ED600A5C6CA /* UIImage+Effect.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF4844F21F06ED600A5C6CA /* UIImage+Effect.m */; };
+		DE46D2C3E1C3F12F9324D2F7 /* libPods-TMSStickerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4ABBCEC285AB3F7A29B640 /* libPods-TMSStickerView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		20CD065BA089A29C04337347 /* Pods-TMSStickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSStickerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-TMSStickerView/Pods-TMSStickerView.release.xcconfig"; sourceTree = "<group>"; };
+		6E7ED40A21ED87A30048BC6B /* TMSStickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMSStickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7ED40D21ED87A30048BC6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6E7ED40E21ED87A30048BC6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6E7ED41021ED87A30048BC6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6E7ED41121ED87A30048BC6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E7ED41421ED87A40048BC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E7ED41621ED87A70048BC6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E7ED41921ED87A70048BC6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E7ED41B21ED87A70048BC6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E7ED41C21ED87A70048BC6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E7ED42421ED91D90048BC6B /* emoji_ios9+.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "emoji_ios9+.json"; sourceTree = "<group>"; };
+		6E7ED42621ED91E80048BC6B /* TMSEmoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSEmoji.h; sourceTree = "<group>"; };
+		6E7ED42721ED91E80048BC6B /* TMSEmoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSEmoji.m; sourceTree = "<group>"; };
+		6E7ED42921EDA83F0048BC6B /* TMSEmojiViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSEmojiViewConst.h; sourceTree = "<group>"; };
+		6E7ED42A21EDA83F0048BC6B /* TMSEmojiViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSEmojiViewConst.m; sourceTree = "<group>"; };
+		6E7ED42C21EDA8A50048BC6B /* TMSStickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSStickerView.h; sourceTree = "<group>"; };
+		6E7ED42D21EDA8A50048BC6B /* TMSStickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSStickerView.m; sourceTree = "<group>"; };
+		6E7ED42F21EDAC890048BC6B /* TMSStickerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSStickerCollectionViewCell.h; sourceTree = "<group>"; };
+		6E7ED43021EDAC890048BC6B /* TMSStickerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSStickerCollectionViewCell.m; sourceTree = "<group>"; };
+		6E7ED43221EDB33E0048BC6B /* TMSEmojiPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSEmojiPreviewView.h; sourceTree = "<group>"; };
+		6E7ED43321EDB33E0048BC6B /* TMSEmojiPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSEmojiPreviewView.m; sourceTree = "<group>"; };
+		6E7ED43521EDB3D20048BC6B /* TMSCustomStickerPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSCustomStickerPreviewView.h; sourceTree = "<group>"; };
+		6E7ED43621EDB3D20048BC6B /* TMSCustomStickerPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSCustomStickerPreviewView.m; sourceTree = "<group>"; };
+		6EF4844B21F02CD900A5C6CA /* TMSInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMSInputView.h; sourceTree = "<group>"; };
+		6EF4844C21F02CD900A5C6CA /* TMSInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMSInputView.m; sourceTree = "<group>"; };
+		6EF4844E21F06ED600A5C6CA /* UIImage+Effect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Effect.h"; sourceTree = "<group>"; };
+		6EF4844F21F06ED600A5C6CA /* UIImage+Effect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Effect.m"; sourceTree = "<group>"; };
+		AF1A2517488EA40F950F4C6C /* Pods-TMSStickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMSStickerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TMSStickerView/Pods-TMSStickerView.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4ABBCEC285AB3F7A29B640 /* libPods-TMSStickerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TMSStickerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E7ED40721ED87A30048BC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE46D2C3E1C3F12F9324D2F7 /* libPods-TMSStickerView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		600BE33FD5E9F12B285D4FB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF1A2517488EA40F950F4C6C /* Pods-TMSStickerView.debug.xcconfig */,
+				20CD065BA089A29C04337347 /* Pods-TMSStickerView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E7ED40121ED87A30048BC6B = {
+			isa = PBXGroup;
+			children = (
+				6E7ED40C21ED87A30048BC6B /* TMSStickerView */,
+				6E7ED40B21ED87A30048BC6B /* Products */,
+				600BE33FD5E9F12B285D4FB9 /* Pods */,
+				D66FC316A2582650ED9B04A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E7ED40B21ED87A30048BC6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ED40A21ED87A30048BC6B /* TMSStickerView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E7ED40C21ED87A30048BC6B /* TMSStickerView */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ED42321ED91A60048BC6B /* StickerView */,
+				6E7ED40D21ED87A30048BC6B /* AppDelegate.h */,
+				6E7ED40E21ED87A30048BC6B /* AppDelegate.m */,
+				6E7ED41021ED87A30048BC6B /* ViewController.h */,
+				6E7ED41121ED87A30048BC6B /* ViewController.m */,
+				6EF4844B21F02CD900A5C6CA /* TMSInputView.h */,
+				6EF4844C21F02CD900A5C6CA /* TMSInputView.m */,
+				6E7ED41321ED87A40048BC6B /* Main.storyboard */,
+				6E7ED41621ED87A70048BC6B /* Assets.xcassets */,
+				6E7ED41821ED87A70048BC6B /* LaunchScreen.storyboard */,
+				6E7ED41B21ED87A70048BC6B /* Info.plist */,
+				6E7ED41C21ED87A70048BC6B /* main.m */,
+			);
+			path = TMSStickerView;
+			sourceTree = "<group>";
+		};
+		6E7ED42321ED91A60048BC6B /* StickerView */ = {
+			isa = PBXGroup;
+			children = (
+				6E7ED42421ED91D90048BC6B /* emoji_ios9+.json */,
+				6E7ED42621ED91E80048BC6B /* TMSEmoji.h */,
+				6E7ED42721ED91E80048BC6B /* TMSEmoji.m */,
+				6E7ED42921EDA83F0048BC6B /* TMSEmojiViewConst.h */,
+				6E7ED42A21EDA83F0048BC6B /* TMSEmojiViewConst.m */,
+				6E7ED42C21EDA8A50048BC6B /* TMSStickerView.h */,
+				6E7ED42D21EDA8A50048BC6B /* TMSStickerView.m */,
+				6E7ED42F21EDAC890048BC6B /* TMSStickerCollectionViewCell.h */,
+				6E7ED43021EDAC890048BC6B /* TMSStickerCollectionViewCell.m */,
+				6E7ED43221EDB33E0048BC6B /* TMSEmojiPreviewView.h */,
+				6E7ED43321EDB33E0048BC6B /* TMSEmojiPreviewView.m */,
+				6E7ED43521EDB3D20048BC6B /* TMSCustomStickerPreviewView.h */,
+				6E7ED43621EDB3D20048BC6B /* TMSCustomStickerPreviewView.m */,
+				6EF4844E21F06ED600A5C6CA /* UIImage+Effect.h */,
+				6EF4844F21F06ED600A5C6CA /* UIImage+Effect.m */,
+			);
+			path = StickerView;
+			sourceTree = "<group>";
+		};
+		D66FC316A2582650ED9B04A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4ABBCEC285AB3F7A29B640 /* libPods-TMSStickerView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E7ED40921ED87A30048BC6B /* TMSStickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E7ED42021ED87A70048BC6B /* Build configuration list for PBXNativeTarget "TMSStickerView" */;
+			buildPhases = (
+				E0FD62A642A6DB9EC40FA123 /* [CP] Check Pods Manifest.lock */,
+				6E7ED40621ED87A30048BC6B /* Sources */,
+				6E7ED40721ED87A30048BC6B /* Frameworks */,
+				6E7ED40821ED87A30048BC6B /* Resources */,
+				D012C8A5EF8E08E1F445689A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TMSStickerView;
+			productName = TMSStickerView;
+			productReference = 6E7ED40A21ED87A30048BC6B /* TMSStickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E7ED40221ED87A30048BC6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = TMS;
+				TargetAttributes = {
+					6E7ED40921ED87A30048BC6B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 6E7ED40521ED87A30048BC6B /* Build configuration list for PBXProject "TMSStickerView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E7ED40121ED87A30048BC6B;
+			productRefGroup = 6E7ED40B21ED87A30048BC6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E7ED40921ED87A30048BC6B /* TMSStickerView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E7ED40821ED87A30048BC6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7ED41A21ED87A70048BC6B /* LaunchScreen.storyboard in Resources */,
+				6E7ED41721ED87A70048BC6B /* Assets.xcassets in Resources */,
+				6E7ED42521ED91D90048BC6B /* emoji_ios9+.json in Resources */,
+				6E7ED41521ED87A40048BC6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D012C8A5EF8E08E1F445689A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TMSStickerView/Pods-TMSStickerView-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TMSStickerView/Pods-TMSStickerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FD62A642A6DB9EC40FA123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMSStickerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E7ED40621ED87A30048BC6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EF4844D21F02CD900A5C6CA /* TMSInputView.m in Sources */,
+				6E7ED43721EDB3D20048BC6B /* TMSCustomStickerPreviewView.m in Sources */,
+				6E7ED42B21EDA83F0048BC6B /* TMSEmojiViewConst.m in Sources */,
+				6E7ED41221ED87A30048BC6B /* ViewController.m in Sources */,
+				6E7ED42821ED91E80048BC6B /* TMSEmoji.m in Sources */,
+				6E7ED43121EDAC890048BC6B /* TMSStickerCollectionViewCell.m in Sources */,
+				6EF4845021F06ED600A5C6CA /* UIImage+Effect.m in Sources */,
+				6E7ED41D21ED87A70048BC6B /* main.m in Sources */,
+				6E7ED43421EDB33E0048BC6B /* TMSEmojiPreviewView.m in Sources */,
+				6E7ED40F21ED87A30048BC6B /* AppDelegate.m in Sources */,
+				6E7ED42E21EDA8A50048BC6B /* TMSStickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E7ED41321ED87A40048BC6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7ED41421ED87A40048BC6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E7ED41821ED87A70048BC6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E7ED41921ED87A70048BC6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E7ED41E21ED87A70048BC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E7ED41F21ED87A70048BC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E7ED42121ED87A70048BC6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1A2517488EA40F950F4C6C /* Pods-TMSStickerView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44T2XCBLFW;
+				INFOPLIST_FILE = TMSStickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TMS.TMSStickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E7ED42221ED87A70048BC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CD065BA089A29C04337347 /* Pods-TMSStickerView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44T2XCBLFW;
+				INFOPLIST_FILE = TMSStickerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TMS.TMSStickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E7ED40521ED87A30048BC6B /* Build configuration list for PBXProject "TMSStickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ED41E21ED87A70048BC6B /* Debug */,
+				6E7ED41F21ED87A70048BC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E7ED42021ED87A70048BC6B /* Build configuration list for PBXNativeTarget "TMSStickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E7ED42121ED87A70048BC6B /* Debug */,
+				6E7ED42221ED87A70048BC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E7ED40221ED87A30048BC6B /* Project object */;
+}
