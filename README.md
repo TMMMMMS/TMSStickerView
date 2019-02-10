@@ -1,6 +1,7 @@
 # TMSStickerView
 
 ### 一款仿微信表情键盘的控件，添加长按预览、自定义表情界面滑块拖拽等功能
+![](https://upload-images.jianshu.io/upload_images/2172432-96bde16876be0bde.gif?imageMogr2/auto-orient/strip)
 
 #### 开发中遇到的问题：
 ```
