@@ -123,7 +123,7 @@
 ```
 ---
 ```
-3. 按分类浏览过的表情，当点击底部分类按钮时，跳转到之前浏览过的页面
+3. 按分类浏览过的表情，当点击底部分类按钮时，跳转到之前浏览过的页面(仅支持键盘类型为包含自定义表情的类型)
 ```
 ##### 处理方案：
 声明两个属性:**customSelectedIndex**(自定义表情用户最后停留的index)和**normalSelectedIndex**(系统emoji表情用户最后停留的index)。在``- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView``方法中记录这两个值，当点击底部分类进行跳转时，遍历整个collectionview的dataSource，依据用户当前所点击的分类找到属于该分类的第一个model所处的index，在index基础上加上customSelectedIndex或者normalSelectedIndex，使用``- (void)collectionView的scrollToItemAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UICollectionViewScrollPosition)scrollPosition animated:(BOOL)animated``方法进行跳转
@@ -178,3 +178,5 @@ if (sender.selected) { // 显示表情键盘
 ##### 处理方案：
 参考于**PPStickerKeyboard**的实现思路，在item上添加**UILongPressGestureRecognizer**，依据手势recognizer.state的三种状态**(UIGestureRecognizerStateBegan, UIGestureRecognizerStateChanged, UIGestureRecognizerStateEnded)**来控制标签预览层的显示与隐藏
 自定义表情预览层的边框通过drawRect方法实现，考虑到drawRect对性能的影响，也可以使用**CAShapeLayer**来替换drawRect方法。
+
+如果你有好的意见或者建议，欢迎来[https://www.jianshu.com/p/37344e97acb1](https://www.jianshu.com/p/37344e97acb1)与我交流
