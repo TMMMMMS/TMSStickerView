@@ -1,14 +1,11 @@
 # TMSStickerView
 
-### 一款仿微信表情键盘的控件，添加长按预览、自定义表情界面滑块拖拽等功能
-![](https://upload-images.jianshu.io/upload_images/2172432-96bde16876be0bde.gif?imageMogr2/auto-orient/strip)
-
+### 一款仿微信表情键盘的控件，添加长按预览、自定义表情界面滑块拖拽等功能![](https://upload-images.jianshu.io/upload_images/2172432-96bde16876be0bde.gif?imageMogr2/auto-orient/strip)
 #### 开发中遇到的问题：
 ```
 1. 系统emoji表情页与自定义表情页交替时，底部滑块的隐藏与显示
 2. 手指从自定义表情页拖拽到emoji表情页，在不松手的情况下，又拖回自定义表情页时，底部滑块的隐藏与显示
-```
-
+```![](https://upload-images.jianshu.io/upload_images/2172432-fe3df7762520b3f3.gif?imageMogr2/auto-orient/strip)
 ##### 处理方案：
 - 何时对滑块做显隐动画？
 既然是交替时的特殊处理，首先在``- (void)scrollViewDidScroll:(UIScrollView *)scrollView``方法中依据collectionview当前偏移量从dataSource中取出当前展示的模型，以及下一个模型。获得两个模型后，首先判断两个表情模型(`TMSEmoji`)的类型是否相同，如果不同，则需要对滑块添加显隐的动画。
