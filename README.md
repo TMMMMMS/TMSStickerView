@@ -5,7 +5,8 @@
 ```
 1. 系统emoji表情页与自定义表情页交替时，底部滑块的隐藏与显示
 2. 手指从自定义表情页拖拽到emoji表情页，在不松手的情况下，又拖回自定义表情页时，底部滑块的隐藏与显示
-```![](https://upload-images.jianshu.io/upload_images/2172432-fe3df7762520b3f3.gif?imageMogr2/auto-orient/strip)
+```
+![](https://upload-images.jianshu.io/upload_images/2172432-fe3df7762520b3f3.gif?imageMogr2/auto-orient/strip)
 ##### 处理方案：
 - 何时对滑块做显隐动画？
 既然是交替时的特殊处理，首先在``- (void)scrollViewDidScroll:(UIScrollView *)scrollView``方法中依据collectionview当前偏移量从dataSource中取出当前展示的模型，以及下一个模型。获得两个模型后，首先判断两个表情模型(`TMSEmoji`)的类型是否相同，如果不同，则需要对滑块添加显隐的动画。
@@ -123,6 +124,7 @@
 ```
 3. 按分类浏览过的表情，当点击底部分类按钮时，跳转到之前浏览过的页面(仅支持键盘类型为包含自定义表情的类型)
 ```
+![](https://upload-images.jianshu.io/upload_images/2172432-e9000e6378aa8ab7.gif?imageMogr2/auto-orient/strip)
 ##### 处理方案：
 声明两个属性:**customSelectedIndex**(自定义表情用户最后停留的index)和**normalSelectedIndex**(系统emoji表情用户最后停留的index)。在``- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView``方法中记录这两个值，当点击底部分类进行跳转时，遍历整个collectionview的dataSource，依据用户当前所点击的分类找到属于该分类的第一个model所处的index，在index基础上加上customSelectedIndex或者normalSelectedIndex，使用``- (void)collectionView的scrollToItemAtIndexPath:(NSIndexPath *)indexPath atScrollPosition:(UICollectionViewScrollPosition)scrollPosition animated:(BOOL)animated``方法进行跳转
 
@@ -152,6 +154,7 @@
 ```
 4. 当调出表情键盘时，单击输入框重新调出系统键盘。
 ```
+![](https://upload-images.jianshu.io/upload_images/2172432-4bc8e2e1cb3f632d.gif?imageMogr2/auto-orient/strip)
 ##### 处理方案：
 当展示出表情键盘时，对textView添加tap手势，在tap手势的action中重新调出系统键盘，并且移除tap手势
 
@@ -173,6 +176,7 @@ if (sender.selected) { // 显示表情键盘
 ```
 5. 表情的长按预览功能
 ```
+![](https://upload-images.jianshu.io/upload_images/2172432-318cca6cc4ee0d5e.gif?imageMogr2/auto-orient/strip)
 ##### 处理方案：
 参考于**PPStickerKeyboard**的实现思路，在item上添加**UILongPressGestureRecognizer**，依据手势recognizer.state的三种状态**(UIGestureRecognizerStateBegan, UIGestureRecognizerStateChanged, UIGestureRecognizerStateEnded)**来控制标签预览层的显示与隐藏
 自定义表情预览层的边框通过drawRect方法实现，考虑到drawRect对性能的影响，也可以使用**CAShapeLayer**来替换drawRect方法。
