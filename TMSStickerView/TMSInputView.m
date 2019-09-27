@@ -95,8 +95,9 @@
     
     if (sender.selected) { // 显示表情键盘
 
+        __weak typeof(self) weakSelf = self;
         self.stickerView.sendActionBlock = ^(id emoji) {
-            NSLog(@"发送emoji表情");
+            NSLog(@"%@", weakSelf.textView.text);
         };
         [self.stickerView setTextView:self.textView];
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
